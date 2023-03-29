@@ -596,6 +596,7 @@ endif()
 # build routing manager daemon (Non-Windows only)
 if (NOT MSVC)
 add_subdirectory( examples/routingmanagerd )
+add_subdirectory( examples/hello_world )
 endif()
 
 # build tools

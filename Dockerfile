@@ -2,8 +2,6 @@ FROM ubuntu:22.04
 
 RUN apt-get update && \
     apt-get install -y \
-        net-tools \
-        iputils-ping \
         g++ \
         cmake \
         libtool \
@@ -12,7 +10,9 @@ RUN apt-get update && \
         libdbus-1-dev \
         libglib2.0-dev \
         libjsoncpp-dev \
-        python \
+        python3 \
+        net-tools \
+        iputils-ping \
         sudo && \
     rm -rf /var/lib/apt/lists/*
 
